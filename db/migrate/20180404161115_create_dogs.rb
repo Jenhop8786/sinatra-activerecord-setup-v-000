@@ -1,14 +1,14 @@
 class CreateDogs < ActiveRecord::Migration[5.1]
-  def up
+ def up
     create_table :dogs do |t|
       t.string :name
       t.string :breed
     end
   end
 
-  def down
-    drop_table :dogs
+ def down
+  drop_table :dogs
   end 
-  end
+ end
 
 end
